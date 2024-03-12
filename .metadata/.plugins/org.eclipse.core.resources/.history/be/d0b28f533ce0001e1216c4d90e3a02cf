@@ -1,0 +1,23 @@
+package com.shopnow.pages;
+
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.FindBy;
+
+public class Homepage {
+	WebDriver driver;
+	
+	
+	@FindBy(xpath="//input[contains(@title,'Search') and (@type='text')]")
+	WebElement Searchbox;
+	
+	public void searchproduct(String productName) throws InterruptedException {
+		Searchbox.click();
+	    Searchbox.sendKeys(productName);
+	    driver.wait(2000);
+	    Searchbox.sendKeys(Keys.ENTER);
+	}
+
+}

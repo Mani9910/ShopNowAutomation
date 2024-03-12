@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Featurerunner (1)" project="ShopNow" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="com.shopnow.testrunner.Featurerunner" time="14.896">
+    <testsuite name="This feature is for checkout flow" time="14.896">
+      <testcase name="Checkout flow" classname="This feature is for checkout flow" time="14.896">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'click on any one product from search result' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("click on any one product from search result")
+public void click_on_any_one_product_from_search_result() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

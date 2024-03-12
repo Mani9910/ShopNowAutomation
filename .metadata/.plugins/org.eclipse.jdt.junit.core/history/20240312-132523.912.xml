@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Featurerunner (1)" project="ShopNow" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="com.shopnow.testrunner.Featurerunner" time="6.557">
+    <testsuite name="This feature is for checkout flow" time="6.557">
+      <testcase name="Checkout flow" classname="This feature is for checkout flow" time="6.557">
+        <error>java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.click()" because "this.Searchbox" is null&#13;
+	at com.shopnow.pages.Homepage.searchproduct(Homepage.java:33)&#13;
+	at com.shopnow.stepdefs.Stepdefinitions.Searchproduct(Stepdefinitions.java:50)&#13;
+	at ✽.search for a 'Laptop' on homepage(file:///C:/Project/ShopNow/src/test/resources/features/Checkout.feature:8)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

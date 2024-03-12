@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Featurerunner (1)" project="ShopNow" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.shopnow.testrunner.Featurerunner" time="19.019">
+    <testsuite name="This feature is for checkout flow" time="19.019">
+      <testcase name="Checkout flow" classname="This feature is for checkout flow" time="19.019"/>
+    </testsuite>
+  </testsuite>
+</testrun>

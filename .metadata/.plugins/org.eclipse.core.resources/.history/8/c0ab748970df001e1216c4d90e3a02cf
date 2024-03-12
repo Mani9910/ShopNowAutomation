@@ -1,0 +1,12 @@
+package com.shopnow.testrunner;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features = { "src/test/resouces/features/" }, 
+                     glue = { "com.shopnow.stepdefs"},
+		           plugin = { "pretty" },
+		       monochrome = true ,
+		             tags = "@test"
+		)
+public class Featurerunner {
+
+}

@@ -1,0 +1,19 @@
+@checkout
+Feature: This feature is for checkout flow 
+
+  @tag1
+  Scenario Outline: Checkout flow
+    Given Im on the browser 
+    When Navigate to <Shopping Site>
+    And search for a '<product>' on homepage
+    And click on any one product from search result
+    And  Add the product to cart from product details page
+    #And  verify the added product in cart 
+    #And proceed with checkout after login 
+    #And Add address 
+    #And Select a payment option
+    #Then verify the order summary 
+
+  Examples:
+  |Shopping Site             |product|
+  |https://www.flipkart.com/ |Laptop |

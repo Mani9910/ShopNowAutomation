@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Featurerunner (1)" project="ShopNow" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="com.shopnow.testrunner.Featurerunner" time="46.302">
+    <testsuite name="This feature is for checkout flow" time="46.302">
+      <testcase name="Checkout flow" classname="This feature is for checkout flow" time="46.302">
+        <failure>org.assertj.core.error.AssertJMultipleFailuresError: &#13;
+Multiple Failures (1 failure)&#13;
+-- failure 1 --&#13;
+[Added product is nor available in cart] &#13;
+Expecting value to be true but was false&#13;
+at CartPage.verifycartproduct(CartPage.java:30)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;
+	at com.shopnow.pages.CartPage.verifycartproduct(CartPage.java:31)&#13;
+	at com.shopnow.stepdefs.Stepdefinitions.verifycartproduct(Stepdefinitions.java:84)&#13;
+	at ✽.verify the added product in cart(file:///C:/Project/ShopNow/src/test/resources/features/Checkout.feature:11)&#13;
+&#13;
+</failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

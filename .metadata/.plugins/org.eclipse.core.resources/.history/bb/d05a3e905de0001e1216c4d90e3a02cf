@@ -1,0 +1,47 @@
+package com.shopnow.pages;
+
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.assertj.core.api.SoftAssertions;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+
+public class ProductDetailsPage {
+	public WebDriver driver;
+	SoftAssertions softAssertions = new SoftAssertions();
+	Log logger = LogFactory.getLog(ProductDetailsPage.class);
+	
+	public ProductDetailsPage(WebDriver driver){
+	this.driver = driver;
+	PageFactory.initElements(driver, this);
+	}
+	
+	@FindBy(xpath="//button[contains(.,'Add to cart')]")
+	WebElement Addtocartbutton;
+	
+	@FindBy(xpath="//a[contains(@href,'cart')]")
+	WebElement carticon;
+	public void Addproducttocart() {
+		 ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
+		    driver.switchTo().window(tabs.get(1));
+		    //driver.close();
+		   // driver.switchTo().window(tabs.get(0));
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Addtocartbutton);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		Addtocartbutton.click();
+	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+		carticon.click();
+		logger.info("Product is added to cart");
+	}
+	
+
+}

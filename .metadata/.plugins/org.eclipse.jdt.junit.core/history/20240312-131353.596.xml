@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Featurerunner (1)" project="ShopNow" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="com.shopnow.testrunner.Featurerunner" time="15.208">
+    <testsuite name="This feature is for checkout flow" time="15.208">
+      <testcase name="Checkout flow" classname="This feature is for checkout flow" time="15.208">
+        <error>java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null&#13;
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)&#13;
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;
+	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)&#13;
+	at com.shopnow.pages.Homepage.searchproduct(Homepage.java:33)&#13;
+	at com.shopnow.stepdefs.Stepdefinitions.Searchproduct(Stepdefinitions.java:50)&#13;
+	at ✽.search for a 'Laptop' on homepage(file:///C:/Project/ShopNow/src/test/resources/features/Checkout.feature:8)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

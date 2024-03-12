@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Featurerunner (1)" project="ShopNow" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="com.shopnow.testrunner.Featurerunner" time="6.963">
+    <testsuite name="This feature is for checkout flow" time="6.963">
+      <testcase name="Checkout flow" classname="This feature is for checkout flow" time="6.963">
+        <error>java.lang.IllegalMonitorStateException: current thread is not owner&#13;
+	at java.base/java.lang.Object.wait(Native Method)&#13;
+	at com.shopnow.stepdefs.Stepdefinitions.launchsite(Stepdefinitions.java:39)&#13;
+	at ✽.Navigate to https://www.flipkart.com/(file:///C:/Project/ShopNow/src/test/resources/features/Checkout.feature:7)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

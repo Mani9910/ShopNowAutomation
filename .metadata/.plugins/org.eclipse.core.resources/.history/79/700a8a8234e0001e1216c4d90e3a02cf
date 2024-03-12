@@ -1,0 +1,19 @@
+package com.shopnow.stepdefs;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class hompagestepdefs {
+	public static void main(String[] args) {
+    System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
+    WebDriver driver = new ChromeDriver();
+    driver.manage().window().maximize();
+
+    driver.get("https://www.flipkart.com/");
+    driver.findElement(By.xpath("(//a[@title='Cart'])[1]")).click();}
+
+	}
+
+
+

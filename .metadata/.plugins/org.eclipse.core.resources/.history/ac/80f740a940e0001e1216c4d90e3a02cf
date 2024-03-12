@@ -1,0 +1,24 @@
+package com.shopnow.pages;
+
+import org.assertj.core.api.SoftAssertions;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+
+public class Homepage {
+	WebDriver driver;
+	SoftAssertions softAssertions = new SoftAssertions();
+	
+	@FindBy(xpath="//input[contains(@title,'Search') and (@type='text')]")
+	WebElement Searchbox;
+	
+	public void searchproduct(String productName) throws InterruptedException {
+		Searchbox.click();
+	    Searchbox.sendKeys(productName);
+	    driver.wait(2000);
+	    Searchbox.sendKeys(Keys.ENTER);
+	}
+
+}

@@ -1,0 +1,31 @@
+package com.shopnow.stepdefs;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.cucumber.java.en.*;
+
+public class Stepdefinitions {
+	WebDriver driver;
+	@Given("^Im on the browser$")
+	public void launchbrowser() {
+		String path= System.getProperty("user.dir");
+		System.setProperty("webdriver.chrome.driver", path+"/src/test/resources/drivers/chromedriver.exe");    
+		driver=new ChromeDriver();
+		driver.manage().timeouts().pageLoadTimeout(5000, TimeUnit.MILLISECONDS);
+		driver.manage().window().maximize();
+		
+		
+	}
+	
+	@When("^Navigate to (.*)$")
+	public void launchsite(String SiteURL)
+	{
+		driver.navigate().to(SiteURL);
+		driver.manage().timeouts().pageLoadTimeout(5000, TimeUnit.MILLISECONDS);
+		
+	}
+
+}
