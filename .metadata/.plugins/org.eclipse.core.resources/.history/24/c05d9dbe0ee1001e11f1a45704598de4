@@ -24,9 +24,11 @@ public class Hooks {
 	public void tearDown(Scenario scenario) {
 		WebDriver driver=Stepdefinitions.driver;
 		logger.info("after hooks triggered ");
+		//if(scenario.isFailed() || !(scenario.isFailed()) ) {
 			driver.close();
 			driver.quit();
 			logger.info("Webdriver closed ");
 			
 	}
 }
+//}

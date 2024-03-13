@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = { "src\\test\\resources\\features" }, 
-                 glue = { "com.shopnow.stepdefs"},
+                 glue = { "com.shopnow.stepdefs","com.shopnow.pages"},
 		         plugin = { "pretty", "html:target/cucumber-reports" },
 		         monochrome = true ,
 		         publish = true,

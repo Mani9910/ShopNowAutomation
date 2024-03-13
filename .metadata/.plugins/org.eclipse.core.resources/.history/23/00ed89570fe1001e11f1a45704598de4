@@ -42,8 +42,7 @@ public class Stepdefinitions {
 	String PDPname;
 
 	/**
-	 * @author Manikandan G 
-	 * This method will initialize the webdriver based on the browser option given in the properties file
+	 * @author Manikandan G This method will initialize the webdriver
 	 * @throws FileNotFoundException
 	 */
 	@Given("^Im on the browser$")
@@ -100,9 +99,8 @@ public class Stepdefinitions {
 	}
 
 	/**
-	 * @author Manikandan G 
-	 * This method will launch the application using the URL of
-	 * the web application
+	 * @author Manikandan G This method will launch the application using the URL of
+	 *         the web application
 	 * @param SiteURL - site URL to launch
 	 */
 	@When("^Navigate to (.*)$")
@@ -118,9 +116,8 @@ public class Stepdefinitions {
 	}
 
 	/**
-	 * @author Manikandan G 
-	 * This method will call a method from Homepage class which
-	 * verifies whether user is on Homepage
+	 * @author Manikandan G This method will call a method from Homepage class which
+	 *         verifies whether user is on Homepage
 	 * @param product - product name to search
 	 */
 	@And("^search for a '(.*)' on homepage$")
@@ -131,9 +128,8 @@ public class Stepdefinitions {
 	}
 
 	/**
-	 * @author Manikandan G 
-	 * This method will call a method from Product Listing Page
-	 * which will select a product from PLP
+	 * @author Manikandan G This method will call a method from Product Listing Page
+	 *         which will select a product from PLP
 	 */
 	@And("^click on any one product from search result$")
 	public void clickonproductinPLP() {
@@ -143,9 +139,8 @@ public class Stepdefinitions {
 	}
 
 	/**
-	 * @author Manikandan G 
-	 * This method will call a method from Product Details Page
-	 * which will add the selected product to cart
+	 * @author Manikandan G This method will call a method from Product Details Page
+	 *         which will add the selected product to cart
 	 */
 	@And("^Add the product to cart from product details page$")
 	public void Addproducttocart() throws InterruptedException {

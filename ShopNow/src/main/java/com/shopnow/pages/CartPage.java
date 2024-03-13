@@ -3,6 +3,7 @@ package com.shopnow.pages;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.assertj.core.api.SoftAssertions;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.html5.SessionStorage;
@@ -55,7 +56,9 @@ public class CartPage {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		placeOrderBtnInCart.click();
+		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].click();", placeOrderBtnInCart);
+		//placeOrderBtnInCart.click();
 
 	}
 
